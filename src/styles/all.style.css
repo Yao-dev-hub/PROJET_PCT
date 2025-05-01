@@ -1,0 +1,71 @@
+#naissance-fond {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../../public/forest-elephant.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img1 {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(7, 7, 7, 0)),
+        url(../../public/embleme.png);
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(7, 7, 7, 0)),
+        url(../../public/inscription1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(7, 7, 7, 0)),
+        url(../../public/recherche.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    background: rgb(11, 157, 3);
+}
+
+
+
+@media (max-width: 768px) {
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+        display: none;
+    }
+
+    .img3 {
+        display: none;
+    }
+
+    .extrait-image {
+        display: none;
+    }
+
+    .inscrit-btn {
+        margin-bottom: 5px;
+    }
+}
