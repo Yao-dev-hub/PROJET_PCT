@@ -46,7 +46,7 @@ function FormMariage() {
                             {
                                 etape === 2 && (
                                     <>
-                                        <h6 className='text-center my-4'> Informations sur l'épouse  </h6>
+                                        <h6 className='text-center my-4'>👰 Informations sur l'épouse  </h6>
                                         <div className="mb-3 col-lg-6">
                                             <Input type='text' name='nomEpouse' placeholder='Nom de la mariée' />
                                         </div>
@@ -89,7 +89,7 @@ function FormMariage() {
                             {
                                 etape === 3 && (
                                     <>
-                                        <h6 className='text-center my-4'> 👰Informations sur l'époux  </h6>
+                                        <h6 className='text-center my-4'> 🤵 Informations sur l'époux  </h6>
                                         <div className="mb-3 col-lg-6">
                                             <Input type='text' name='nomEpoux' placeholder="Nom de l'époux" />
                                         </div>
@@ -205,7 +205,7 @@ function FormMariage() {
                                         </div>
                                         <div class="mb-3 col-lg-6">
                                             <label for="certificate" className="form-label">Certificat prénuptial ou mention de dispense</label>
-                                            <Input type="text" className="form-control shadow-none" id="certificate" name="certificate" placeholder="Certificat médical ou 'Dispense'" />
+                                            <input type="text" className="form-control shadow-none" id="certificate" name="certificate" placeholder="Certificat médical ou 'Dispense'" />
                                         </div>
                                         <div className="mb-3 col-lg-6">
                                             <label for="contract" className="form-label">Contrat de mariage</label>
@@ -217,11 +217,11 @@ function FormMariage() {
                                         </div>
                                         <div className="mb-3 col-lg-6">
                                             <label for="officer" className="form-label">Nom de l’officier d’état civil</label>
-                                            <Input type="text" id="officer" name="officer" placeholder="Nom de l’officier" />
+                                            <input type="text" className="form-control shadow-none" id="officer" name="officer" placeholder="Nom de l’officier" />
                                         </div>
                                         <div className="mb-3 d-flex justify-content-between">
                                             <button onClick={retour} className='btn btn-dark btn-sm'><FaArrowLeftLong /> retour </button>
-                                            <button onClick={suivant} className='btn btn-success btn-sm'>Soumettre <FaArrowRightLong /></button>
+                                            <button className='btn btn-success btn-sm'>Soumettre <FaArrowRightLong /></button>
                                         </div>
 
                                     </>
