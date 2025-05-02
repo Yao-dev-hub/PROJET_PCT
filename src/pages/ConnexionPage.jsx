@@ -1,6 +1,5 @@
 import React from 'react'
-import InscriptionForm from '../components/InscriptionForm'
-import Connexion from '../components/connexion'
+import Connexion from '../components/Connexion'
 
 function ConnexionPage() {
     return (
