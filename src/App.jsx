@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Chargement from "./components/Chargement";
+import Contact from "./components/Contact";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./components/Home"));
@@ -17,7 +19,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Suspense fallback={<div>Chargement...</div>}>
+      <Suspense fallback={<Chargement />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-naissance" element={<Naissance />} />
@@ -27,6 +29,7 @@ function App() {
           <Route path="/declare" element={<DeclarationPage />} />
           <Route path="/mariage" element={<CreateMariage />} />
           <Route path="/recup" element={<RecuperationPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
       <Footer />

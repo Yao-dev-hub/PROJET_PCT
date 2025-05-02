@@ -1,14 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import "../styles/nav.style.css"
-import { GiElephant } from "react-icons/gi";
+import "../styles/all.style.css"
 
 
 function NavBar() {
     return (
-        <Navbar collapseOnSelect expand="lg" className="nav-bar ">
+        <Navbar collapseOnSelect expand="lg" className="nav-bar">
             <Container>
                 <Navbar.Brand href="/" className='text-white fw-bolder'><img src="/embleme.png" className='me-2'  width={50} alt="logo" />logo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

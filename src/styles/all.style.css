@@ -42,8 +42,12 @@
     background-repeat: no-repeat;
 }
 
+.chargement{
+    height: 100vh;
+}
+
 .nav-bar {
-    background: rgb(11, 157, 3);
+    background: rgb(11, 157, 3) !important;
 }
 
 
