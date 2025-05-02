@@ -3,7 +3,6 @@ import { Suspense, lazy } from "react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Chargement from "./components/Chargement";
-import Contact from "./components/Contact";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./components/Home"));
@@ -14,6 +13,7 @@ const GetPage = lazy(() => import("./pages/GetPage"));
 const RecuperationPage = lazy(() => import("./pages/RecuperationPage"));
 const CreateMariage = lazy(() => import("./pages/CreateMariage"));
 const DeclarationPage = lazy(() => import("./pages/Declaration"));
+const Contact = lazy(() => import("./components/Contact"));
 
 function App() {
   return (
