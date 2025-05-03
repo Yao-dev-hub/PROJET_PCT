@@ -26,7 +26,7 @@ function NavBar() {
                         </Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="/inscription" className='text-white fw-bold  inscrit-btn btn btn-sm bg-warning '>S'inscrire</Nav.Link>
+                        <Nav.Link href="/inscription" className='text-white fw-bold  inscrit-btn btn btn-sm bg-success '>S'inscrire</Nav.Link>
                         <Nav.Link href="/connexion" className='text-dark fw-bold btn btn-sm bg-light ms-lg-1'>
                             Se connecter
                         </Nav.Link>

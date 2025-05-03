@@ -3,7 +3,7 @@ import InscriptionForm from '../components/InscriptionForm'
 
 function InscriptionPage() {
     return (
-        <div className='container p-5'>
+        <div className='container  p-5'>
             <div className="row">
                 <div className="col-lg-5">
                     <InscriptionForm />

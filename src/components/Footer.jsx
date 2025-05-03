@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Linkedin, Twitter, Facebook, Mail } from 'lucide-react';
 import "../styles/footer.style.css"
 import { Link } from 'react-router-dom';
-import { Divider } from 'antd';
 
 const Footer= () => {
   const currentYear = new Date().getFullYear();

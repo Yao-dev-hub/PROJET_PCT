@@ -21,33 +21,40 @@
 }
 
 .img2 {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(7, 7, 7, 0)),
-        url(../../public/inscription1.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.455), rgba(10, 10, 10, 0.5)),
+        url(../../public/homme-vert.png);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 40%;
 }
 
 .img3 {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(7, 7, 7, 0)),
-        url(../../public/recherche.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.455), rgba(10, 10, 10, 0.5)),
+        url(../../public/femme-orange.png);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position: center;
+    background-position: 25% 25%;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 20%;
 }
 
-.chargement{
+#no-found {
+    width: 400px;
+    height: 500px;
+}
+
+.chargement {
     height: 100vh;
 }
 
 .nav-bar {
-    background: rgb(11, 157, 3) !important;
+    background: rgb(255, 146, 3) !important;
 }
 
 

@@ -32,7 +32,7 @@ function Declaration() {
                         <div className="card-body">
                             <h6 className='text-center'>Déclaration mariage ...</h6>
                             <div className="d-flex justify-content-center mt-3">
-                                <Link className=' btn  btn-primary  text-center me-1 text-light fw-bolder' to="/mariage">Cliquez ici <CiEdit className='fw-bold fs-5' /></Link>
+                                <Link className=' btn  btn-light  text-center border-dark me-1 text-warning fw-bolder' to="/mariage">Cliquez ici <CiEdit className='fw-bold fs-5' /></Link>
                             </div>
                         </div>
                     </Card>

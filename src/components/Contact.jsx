@@ -8,15 +8,15 @@ function Contact() {
                 <div className="col-lg-7">
                     <div className="row flex-column justify-content-center align-items-center p-lg-5">
                         <div className="col-lg-12">
-                            <h4 className='text-center fw-bold  mb-5'>Contactez-nous pour toute assistance ou demande d’information</h4>
-                            <p className='text-medium'>
+                            <h4 className='text-center fw-bold  mb-5'>Contactez-nous pour toute demande ou assistance.</h4>
+                            <p className='small text-center'>
                                 Vous avez une question concernant une déclaration, une récupération d’acte de naissance ou une démarche en cours ?
                                 Notre équipe est à votre écoute pour vous accompagner et répondre rapidement à toutes vos demandes.
                                 Remplissez le formulaire ci-dessous ou utilisez nos coordonnées pour nous joindre directement.
                             </p>
                         </div>
                         <div className="col-lg-12 mt-5">
-                            <div className="row">
+                            <div className="row justify-content-center">
                                 <div className="col-lg-4">
                                     <h5>Adresse</h5>
                                     <p  className='h6 text-muted '>Pays : Côte d'ivoire</p>
