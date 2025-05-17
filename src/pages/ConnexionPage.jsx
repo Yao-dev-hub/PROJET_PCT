@@ -3,7 +3,7 @@ import Connexion from '../components/Connexion'
 
 function ConnexionPage() {
     return (
-        <div className='container p-5'>
+        <div className='container p-lg-5'>
             <div className="row">
                 <div className="col-lg-5">
                     <Connexion />

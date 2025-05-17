@@ -1,5 +1,6 @@
 import { Input } from 'antd'
 import React, { useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast'
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6'
 
 function FormMariage() {
@@ -15,11 +16,18 @@ function FormMariage() {
         setEtape(etape - 1)
     }
 
+    const ShowMessage = () => {
+        toast.success('Successfully toasted!')
+    }
 
     return (
         <div className='container-fluid my-5'>
             <div className="row justify-content-between align-items-center p-lg-5">
                 <div className="col-lg-3 extrait-image">
+                    <Toaster
+                        position="top-center"
+                        reverseOrder={false}
+                    />
                     <img src="/marriage.jpg" width={400} alt="image extrait de naissance" />
                 </div>
                 <div className="col-lg-8 p-lg-5">
@@ -221,7 +229,7 @@ function FormMariage() {
                                         </div>
                                         <div className="mb-3 d-flex justify-content-between">
                                             <button onClick={retour} className='btn btn-dark btn-sm'><FaArrowLeftLong /> retour </button>
-                                            <button className='btn btn-success btn-sm'>Soumettre <FaArrowRightLong /></button>
+                                            <button className='btn btn-success btn-sm' onClick={ShowMessage} >Soumettre <FaArrowRightLong /></button>
                                         </div>
 
                                     </>

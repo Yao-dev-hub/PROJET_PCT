@@ -1,25 +1,93 @@
-.hover-link {
-  transition: color 0.2s ease;
-}
-
 .footer {
-  background: rgb(0, 0, 0) 
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.hover-link:hover {
-  color: #adb5bd !important;
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #10b981, #3b82f6);
 }
 
-.social-icons a {
-  transition: transform 0.2s ease, color 0.2s ease;
+.footer-title {
+  position: relative;
+  padding-bottom: 12px;
+  color: #fff;
 }
 
-.social-icons a:hover {
-  transform: translateY(-2px);
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #4f46e5, #10b981);
+}
+
+.footer-links li a:hover,
+.footer-contact li a:hover {
+  color: #4f46e5 !important;
+  transform: translateX(5px);
+}
+
+.hover-animate {
+  transition: all 0.3s ease;
+}
+
+.hover-animate:hover {
+  transform: translateX(5px);
+  color: #4f46e5 !important;
+}
+
+.link-icon {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.hover-animate:hover .link-icon {
+  opacity: 1;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #4f46e5;
+  transform: translateY(-3px);
+}
+
+.newsletter .form-control {
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff !important;
 }
 
-address {
-  font-style: normal;
-  color: #adb5bd;
+.newsletter .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+  border-color: #4f46e5;
+}
+
+.newsletter .btn {
+  background: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.newsletter .btn:hover {
+  background: #4338ca;
+  border-color: #4338ca;
+}
+
+@media (max-width: 767.98px) {
+  .footer-widget {
+    margin-bottom: 30px;
+  }
 }

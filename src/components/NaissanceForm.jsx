@@ -3,6 +3,7 @@ import { Button, Input } from 'antd';
 import { FaArrowLeftLong } from "react-icons/fa6"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { GrSend } from "react-icons/gr";
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
@@ -18,12 +19,19 @@ function NaissanceForm() {
         setEtape(etape - 1)
     }
 
+    const ShowMessage = () => {
+        toast.success('Données envoyées avec succès !')
+    }
 
 
 
     return (
         <div className='container d-flex justify-content-center align-items-center my-5'>
             <div className="row justify-content-between align-items-center">
+                <Toaster
+                    position="top-center"
+                    reverseOrder={false}
+                />
                 <div className="col-lg-4 extrait-image">
                     <img src="/extrait.jpg" width={400} alt="image extrait de naissance" />
                 </div>
@@ -122,7 +130,7 @@ function NaissanceForm() {
                                     </div>
                                     <div className="mb-3 col-lg-12 d-flex justify-content-between">
                                         <Button color="default" variant="solid" onClick={retour}><FaArrowLeftLong /> retour </Button>
-                                        <Button color="cyan" variant="solid">Soumettre <GrSend /></Button>
+                                        <Button color="cyan" variant="solid" onClick={ShowMessage}>Soumettre <GrSend /></Button>
                                     </div>
                                 </>
                             )
