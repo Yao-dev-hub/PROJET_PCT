@@ -149,7 +149,7 @@ const Footer = () => {
                 <div className="input-group mb-3">
                   <input
                     type="email"
-                    className="form-control bg-transparent text-light"
+                    className="form-control border-warning shadow-none bg-transparent text-light"
                     placeholder="Votre email"
                     aria-label="Email"
                   />
@@ -163,7 +163,7 @@ const Footer = () => {
         </Row>
 
         {/* Divider */}
-        <hr className="my-4 border-secondary opacity-25" />
+        <hr className="my-4 border-dark opacity-25 fw-bolder" />
 
         {/* Copyright */}
         <Row>

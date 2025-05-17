@@ -43,28 +43,28 @@ function RecupeDeces() {
                 <h4 className='text-center fw-bold mb-4'>Demande d’extrait de décès</h4>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom du défunt" value={nomDefunt} onChange={e => setNomDefunt(e.target.value)} />
+                    <Input placeholder="Nom du défunt" className='text-dark' value={nomDefunt} onChange={e => setNomDefunt(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Prénom du défunt" value={prenomDefunt} onChange={e => setPrenomDefunt(e.target.value)} />
+                    <Input placeholder="Prénom du défunt" className='text-dark' value={prenomDefunt} onChange={e => setPrenomDefunt(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input type="date" value={dateDeces} onChange={e => setDateDeces(e.target.value)} />
+                    <Input type="date"  className='text-dark' value={dateDeces} onChange={e => setDateDeces(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Lieu du décès" value={lieuDeces} onChange={e => setLieuDeces(e.target.value)} />
+                    <Input placeholder="Lieu du décès" className='text-dark'  value={lieuDeces} onChange={e => setLieuDeces(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-12">
-                    <Input placeholder="Nom du déclarant" value={nomDeclarant} onChange={e => setNomDeclarant(e.target.value)} />
+                    <Input placeholder="Nom du déclarant" className='text-dark'  value={nomDeclarant} onChange={e => setNomDeclarant(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-12">
                     <select
-                        className="form-select shadow-none"
+                        className="form-select shadow-none text-dark"
                         value={motif}
                         onChange={e => setMotif(e.target.value)}
 
@@ -82,7 +82,7 @@ function RecupeDeces() {
                     <Input
                         type="file"
                         accept="image/*,application/pdf"
-                        className="form-control"
+                        className="form-control text-dark"
                         onChange={e => setPieceIdentite(e.target.files ? e.target.files[0] : null)}
                     />
                 </div>

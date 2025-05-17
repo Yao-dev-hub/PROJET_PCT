@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, #006205 0%, #025e00 100%);
   position: relative;
   overflow: hidden;
 }
@@ -27,12 +27,12 @@
   bottom: 0;
   width: 50px;
   height: 2px;
-  background: linear-gradient(90deg, #4f46e5, #10b981);
+  background: linear-gradient(90deg, #ff9500, #10b981);
 }
 
 .footer-links li a:hover,
 .footer-contact li a:hover {
-  color: #4f46e5 !important;
+  color: #ff9100 !important;
   transform: translateX(5px);
 }
 
@@ -42,7 +42,7 @@
 
 .hover-animate:hover {
   transform: translateX(5px);
-  color: #4f46e5 !important;
+  color: #80e546 !important;
 }
 
 .link-icon {
@@ -62,14 +62,11 @@
 }
 
 .social-icon:hover {
-  background: #4f46e5;
+  background: #ff9100;
   transform: translateY(-3px);
 }
 
-.newsletter .form-control {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff !important;
-}
+
 
 .newsletter .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
@@ -77,13 +74,13 @@
 }
 
 .newsletter .btn {
-  background: #4f46e5;
-  border-color: #4f46e5;
+  background: #ff8800;
+  border-color: #ffa200;
 }
 
 .newsletter .btn:hover {
-  background: #4338ca;
-  border-color: #4338ca;
+  background: #ffa200;
+  border-color: #ca9038;
 }
 
 @media (max-width: 767.98px) {

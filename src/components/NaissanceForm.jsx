@@ -52,16 +52,16 @@ function NaissanceForm() {
                             etape === 1 && (
                                 <>
                                     <div className="my-4 col-lg-6">
-                                        <Input type='text' placeholder="Nom" />
+                                        <Input type='text'  className='text-dark'  placeholder="Nom" />
                                     </div>
                                     <div className="my-4 col-lg-6">
-                                        <Input type='text' placeholder="Prenom" />
+                                        <Input type='text'  className='text-dark'  placeholder="Prenom" />
                                     </div>
                                     <div className="mb-4 col-lg-12">
-                                        <Input type='datetime-local' name='date' />
+                                        <Input type='datetime-local'  className='text-dark'  name='date' />
                                     </div>
                                     <div className="mb-4 col-lg-12">
-                                        <Input type='text' placeholder="Lieu de naissance" />
+                                        <Input type='text'  className='text-dark'  placeholder="Lieu de naissance" />
                                     </div>
                                     <div className="mb-3 col-lg-12 d-flex justify-content-end">
                                         <Button type="primary" className='btn-sm' onClick={suivant}>Suivant <FaArrowRightLong /></Button>
@@ -74,16 +74,16 @@ function NaissanceForm() {
                             etape === 2 && (
                                 <>
                                     <div className="my-4 col-lg-6">
-                                        <Input type='text' placeholder="Nom du père" />
+                                        <Input type='text'   className='text-dark' placeholder="Nom du père" />
                                     </div>
                                     <div className="my-4 col-lg-6">
-                                        <Input type='text' placeholder="Prenom du père" />
+                                        <Input type='text'  className='text-dark'  placeholder="Prenom du père" />
                                     </div>
                                     <div className="mb-4 col-lg-12">
-                                        <Input type='text' placeholder="Nationalité du père" />
+                                        <Input type='text'   className='text-dark' placeholder="Nationalité du père" />
                                     </div>
                                     <div className="mb-4 col-lg-12">
-                                        <Input type='tel' placeholder="Numero du père" />
+                                        <Input type='tel'  className='text-dark'  placeholder="Numero du père" />
                                     </div>
                                     <div className="mb-3 col-lg-12 d-flex justify-content-between">
                                         <Button color="default" variant="solid" onClick={retour}><FaArrowLeftLong /> retour </Button>
@@ -97,16 +97,16 @@ function NaissanceForm() {
                             etape === 3 && (
                                 <>
                                     <div className="my-4 col-lg-6">
-                                        <Input type='text' placeholder="Nom de la mère" />
+                                        <Input type='text'  className='text-dark'  placeholder="Nom de la mère" />
                                     </div>
                                     <div className="my-4 col-lg-6">
-                                        <Input type='text' placeholder="Prenom de la mère" />
+                                        <Input type='text'  className='text-dark'  placeholder="Prenom de la mère" />
                                     </div>
                                     <div className="mb-4 col-lg-12">
-                                        <Input type='text' placeholder="Nationalité de la mère" />
+                                        <Input type='text'  className='text-dark'  placeholder="Nationalité de la mère" />
                                     </div>
                                     <div className="mb-4 col-lg-12">
-                                        <Input type='tel' placeholder="Numero de la mère" />
+                                        <Input type='tel'  className='text-dark'  placeholder="Numero de la mère" />
                                     </div>
 
                                     <div className="mb-3 col-lg-12 d-flex justify-content-between">
@@ -122,11 +122,11 @@ function NaissanceForm() {
                                 <>
                                     <div className="my-4 col-lg-12">
                                         <label htmlFor="pieceIdentite" className='mb-2'>Piece d'identité du déclarant </label>
-                                        <Input type='file' className='form-control' id='pieceIdentite' name='pieceIdentite' accept='image/jpg,image/png,application/pdf' />
+                                        <Input type='file' className='form-control text-dark' id='pieceIdentite' name='pieceIdentite' accept='image/jpg,image/png,application/pdf' />
                                     </div>
                                     <div className="mb-3 col-lg-12">
                                         <label htmlFor="certificatNaissance" className='mb-2'>Certificat de naissance </label>
-                                        <Input type='file' className='form-control' id='certificatNaissance' name='certificatNaissance' accept='image/jpg,image/png,application/pdf' />
+                                        <Input type='file' className='form-control text-dark' id='certificatNaissance' name='certificatNaissance' accept='image/jpg,image/png,application/pdf' />
                                     </div>
                                     <div className="mb-3 col-lg-12 d-flex justify-content-between">
                                         <Button color="default" variant="solid" onClick={retour}><FaArrowLeftLong /> retour </Button>

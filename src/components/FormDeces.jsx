@@ -33,16 +33,16 @@ function FormDeces() {
             {etape === 1 && (
               <>
                 <div className="my-4 col-lg-6">
-                  <Input type="text" placeholder="Nom du défunt" />
+                  <Input type="text" className='text-dark' placeholder="Nom du défunt" />
                 </div>
                 <div className="my-4 col-lg-6">
-                  <Input type="text" placeholder="Prénom du défunt" />
+                  <Input type="text" className='text-dark'  placeholder="Prénom du défunt" />
                 </div>
                 <div className="mb-4 col-lg-12">
-                  <Input type="datetime-local" placeholder="Date du décès" />
+                  <Input type="datetime-local" className='text-dark' placeholder="Date du décès" />
                 </div>
                 <div className="mb-4 col-lg-12">
-                  <Input type="text" placeholder="Lieu du décès" />
+                  <Input type="text" className='text-dark' placeholder="Lieu du décès" />
                 </div>
                 <div className="mb-3 col-lg-12 d-flex justify-content-end">
                   <Button type="primary" className='btn-sm' onClick={suivant}>

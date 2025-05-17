@@ -45,32 +45,32 @@ function RecupeNaissance() {
                 <h4 className='text-center fw-bold mb-4'>Demande d’extrait de naissance</h4>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom" value={nom} onChange={e => setNom(e.target.value)} />
+                    <Input placeholder="Nom" className='text-dark' value={nom} onChange={e => setNom(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Prénom" value={prenom} onChange={e => setPrenom(e.target.value)} />
+                    <Input placeholder="Prénom" className='text-dark' value={prenom} onChange={e => setPrenom(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input type="date" value={dateNaissance} onChange={e => setDateNaissance(e.target.value)} />
+                    <Input type="date" className='text-dark' value={dateNaissance} onChange={e => setDateNaissance(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Lieu de naissance" value={lieuNaissance} onChange={e => setLieuNaissance(e.target.value)} />
+                    <Input placeholder="Lieu de naissance" className='text-dark' value={lieuNaissance} onChange={e => setLieuNaissance(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom du père" value={nomPere} onChange={e => setNomPere(e.target.value)} />
+                    <Input placeholder="Nom du père" className='text-dark' value={nomPere} onChange={e => setNomPere(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom de la mère" value={nomMere} onChange={e => setNomMere(e.target.value)} />
+                    <Input placeholder="Nom de la mère" className='text-dark' value={nomMere} onChange={e => setNomMere(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-12">
                     <select
-                        className="form-select shadow-none"
+                        className="form-select shadow-none text-dark"
                         value={motif}
                         onChange={e => setMotif(e.target.value)}
                     
@@ -88,7 +88,7 @@ function RecupeNaissance() {
                     <Input
                         type="file"
                         accept="image/*,application/pdf"
-                        className="form-control"
+                        className="form-control text-dark"
                         onChange={e => setPieceIdentite(e.target.files ? e.target.files[0] : null)}
                     
                     />

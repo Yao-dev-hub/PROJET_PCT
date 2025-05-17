@@ -38,10 +38,10 @@ function FormMariage() {
                                     <>
                                         <h6 className='text-center my-4'>Informations générales sur le mariage </h6>
                                         <div className="mb-3 col-lg-6">
-                                            <Input type='text' name='lieu' placeholder='Lieu du mariage' />
+                                            <Input type='text' className='text-dark' name='lieu' placeholder='Lieu du mariage' />
                                         </div>
                                         <div className="mb-3 col-lg-6">
-                                            <Input type='date' name='date' />
+                                            <Input type='date' className='text-dark' name='date' />
                                         </div>
                                         <div className="mb-3 d-flex justify-content-end">
                                             <button onClick={suivant} className='btn btn-primary btn-sm'>suivant <FaArrowRightLong /></button>
@@ -56,35 +56,35 @@ function FormMariage() {
                                     <>
                                         <h6 className='text-center my-4'>👰 Informations sur l'épouse  </h6>
                                         <div className="mb-3 col-lg-6">
-                                            <Input type='text' name='nomEpouse' placeholder='Nom de la mariée' />
+                                            <Input type='text' className='text-dark' name='nomEpouse' placeholder='Nom de la mariée' />
                                         </div>
                                         <div className="mb-3 col-lg-6">
-                                            <Input type='text' name='prenomEpouse' placeholder='Prenom de la mariée ' />
+                                            <Input type='text' className='text-dark' name='prenomEpouse' placeholder='Prenom de la mariée ' />
                                         </div>
                                         <div className="mb-3 col-lg-4">
-                                            <Input type='text' name='lieuNaissanceEpouse' placeholder='Lieu de naissance de la mariée ' />
+                                            <Input type='text' className='text-dark' name='lieuNaissanceEpouse' placeholder='Lieu de naissance de la mariée ' />
                                         </div>
                                         <div className="mb-3 col-lg-4">
-                                            <Input type='tel' name='telEpouse' placeholder="Numero de téléphone de l'épouse " />
+                                            <Input type='tel' className='text-dark' name='telEpouse' placeholder="Numero de téléphone de l'épouse " />
                                         </div>
                                         <div className="mb-3 col-lg-4">
-                                            <Input type='text' name='nationaliteEpouse' placeholder='Nationalité de la mariée' />
+                                            <Input type='text' className='text-dark' name='nationaliteEpouse' placeholder='Nationalité de la mariée' />
                                         </div>
 
                                         <div className="mb-3 col-lg-4">
-                                            <Input type='text' name='professionEpouse' placeholder='Profession de la mariée ' />
+                                            <Input type='text' className='text-dark' name='professionEpouse' placeholder='Profession de la mariée ' />
                                         </div>
                                         <div className="mb-3 col-lg-4">
-                                            <Input type='text' name='adresseEpouse' placeholder='Adresse de la mariée ' />
+                                            <Input type='text' className='text-dark' name='adresseEpouse' placeholder='Adresse de la mariée ' />
                                         </div>
                                         <div className="mb-3 col-lg-4">
-                                            <Input type='text' name='PieceIdentiteEpouse' placeholder="Numéro de la pièce d'identité de la mariée " />
+                                            <Input type='text' className='text-dark' name='PieceIdentiteEpouse' placeholder="Numéro de la pièce d'identité de la mariée " />
                                         </div>
                                         <div className="mb-3 col-lg-6">
-                                            <Input type='text' name='pereEpouse' placeholder='Nom complet du père de la mariée' />
+                                            <Input type='text' className='text-dark' name='pereEpouse' placeholder='Nom complet du père de la mariée' />
                                         </div>
                                         <div className="mb-3 col-lg-6">
-                                            <Input type='text' name='mereEpouse' placeholder='Nom complet de la mère de la mariée' />
+                                            <Input type='text' className='text-dark' name='mereEpouse' placeholder='Nom complet de la mère de la mariée' />
                                         </div>
                                         <div className="mb-3 d-flex justify-content-between">
                                             <button onClick={retour} className='btn btn-dark btn-sm'><FaArrowLeftLong /> retour </button>
