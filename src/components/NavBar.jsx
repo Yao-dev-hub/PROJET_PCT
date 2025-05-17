@@ -8,7 +8,7 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className="nav-bar">
             <Container>
-                <Navbar.Brand href="/" className='text-white fw-bolder'><img src="/embleme.png" className='me-2'  width={50} alt="logo" />logo</Navbar.Brand>
+                <Navbar.Brand href="/" className='text-white fw-bolder'><img src="/embleme.png" className='me-2'  width={50} alt="logo" />DigiActes</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto ">

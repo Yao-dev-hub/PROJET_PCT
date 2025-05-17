@@ -45,27 +45,27 @@ function RecupeNaissance() {
                 <h4 className='text-center fw-bold mb-4'>Demande d’extrait de naissance</h4>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom" value={nom} onChange={e => setNom(e.target.value)} required />
+                    <Input placeholder="Nom" value={nom} onChange={e => setNom(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Prénom" value={prenom} onChange={e => setPrenom(e.target.value)} required />
+                    <Input placeholder="Prénom" value={prenom} onChange={e => setPrenom(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input type="date" value={dateNaissance} onChange={e => setDateNaissance(e.target.value)} required />
+                    <Input type="date" value={dateNaissance} onChange={e => setDateNaissance(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Lieu de naissance" value={lieuNaissance} onChange={e => setLieuNaissance(e.target.value)} required />
+                    <Input placeholder="Lieu de naissance" value={lieuNaissance} onChange={e => setLieuNaissance(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom du père" value={nomPere} onChange={e => setNomPere(e.target.value)} required />
+                    <Input placeholder="Nom du père" value={nomPere} onChange={e => setNomPere(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom de la mère" value={nomMere} onChange={e => setNomMere(e.target.value)} required />
+                    <Input placeholder="Nom de la mère" value={nomMere} onChange={e => setNomMere(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-12">
@@ -73,7 +73,7 @@ function RecupeNaissance() {
                         className="form-select shadow-none"
                         value={motif}
                         onChange={e => setMotif(e.target.value)}
-                        required
+                    
                     >
                         <option value="">Motif de la demande</option>
                         <option value="scolarité">Scolarité</option>
@@ -90,7 +90,7 @@ function RecupeNaissance() {
                         accept="image/*,application/pdf"
                         className="form-control"
                         onChange={e => setPieceIdentite(e.target.files ? e.target.files[0] : null)}
-                        required
+                    
                     />
                 </div>
 

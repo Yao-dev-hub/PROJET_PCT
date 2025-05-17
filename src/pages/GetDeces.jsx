@@ -43,23 +43,23 @@ function RecupeDeces() {
                 <h4 className='text-center fw-bold mb-4'>Demande d’extrait de décès</h4>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom du défunt" value={nomDefunt} onChange={e => setNomDefunt(e.target.value)} required />
+                    <Input placeholder="Nom du défunt" value={nomDefunt} onChange={e => setNomDefunt(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Prénom du défunt" value={prenomDefunt} onChange={e => setPrenomDefunt(e.target.value)} required />
+                    <Input placeholder="Prénom du défunt" value={prenomDefunt} onChange={e => setPrenomDefunt(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input type="date" value={dateDeces} onChange={e => setDateDeces(e.target.value)} required />
+                    <Input type="date" value={dateDeces} onChange={e => setDateDeces(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Lieu du décès" value={lieuDeces} onChange={e => setLieuDeces(e.target.value)} required />
+                    <Input placeholder="Lieu du décès" value={lieuDeces} onChange={e => setLieuDeces(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-12">
-                    <Input placeholder="Nom du déclarant" value={nomDeclarant} onChange={e => setNomDeclarant(e.target.value)} required />
+                    <Input placeholder="Nom du déclarant" value={nomDeclarant} onChange={e => setNomDeclarant(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-12">
@@ -67,7 +67,7 @@ function RecupeDeces() {
                         className="form-select shadow-none"
                         value={motif}
                         onChange={e => setMotif(e.target.value)}
-                        required
+
                     >
                         <option value="">Motif de la demande</option>
                         <option value="succession">Succession</option>
@@ -84,7 +84,6 @@ function RecupeDeces() {
                         accept="image/*,application/pdf"
                         className="form-control"
                         onChange={e => setPieceIdentite(e.target.files ? e.target.files[0] : null)}
-                        required
                     />
                 </div>
 

@@ -171,7 +171,7 @@ const Footer = () => {
             <p className="mb-0 text-white">
               © {currentYear} MyApp - Tous droits réservés. |
               <span className="mx-2">•</span>
-              Conçu avec ❤️ en Côte d'Ivoire
+              Conçu en Côte d'Ivoire
             </p>
           </Col>
         </Row>

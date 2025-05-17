@@ -46,27 +46,27 @@ function RecupeMariage() {
                 <h4 className='text-center fw-bold mb-4'>Demande d’extrait de mariage</h4>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom de l'époux" value={nomEpoux} onChange={e => setNomEpoux(e.target.value)} required />
+                    <Input placeholder="Nom de l'époux" value={nomEpoux} onChange={e => setNomEpoux(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Prénom de l'époux" value={prenomEpoux} onChange={e => setPrenomEpoux(e.target.value)} required />
+                    <Input placeholder="Prénom de l'époux" value={prenomEpoux} onChange={e => setPrenomEpoux(e.target.value)}  />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Nom de l'épouse" value={nomEpouse} onChange={e => setNomEpouse(e.target.value)} required />
+                    <Input placeholder="Nom de l'épouse" value={nomEpouse} onChange={e => setNomEpouse(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Prénom de l'épouse" value={prenomEpouse} onChange={e => setPrenomEpouse(e.target.value)} required />
+                    <Input placeholder="Prénom de l'épouse" value={prenomEpouse} onChange={e => setPrenomEpouse(e.target.value)} />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input type="date" value={dateMariage} onChange={e => setDateMariage(e.target.value)} required />
+                    <Input type="date" value={dateMariage} onChange={e => setDateMariage(e.target.value)}  />
                 </div>
 
                 <div className="mb-3 col-lg-6">
-                    <Input placeholder="Lieu du mariage" value={lieuMariage} onChange={e => setLieuMariage(e.target.value)} required />
+                    <Input placeholder="Lieu du mariage" value={lieuMariage} onChange={e => setLieuMariage(e.target.value)}  />
                 </div>
 
                 <div className="mb-3 col-lg-12">
@@ -74,7 +74,7 @@ function RecupeMariage() {
                         className="form-select shadow-none"
                         value={motif}
                         onChange={e => setMotif(e.target.value)}
-                        required
+                        
                     >
                         <option value="">Motif de la demande</option>
                         <option value="administratif">Dossier administratif</option>
@@ -91,7 +91,7 @@ function RecupeMariage() {
                         accept="image/*,application/pdf"
                         className="form-control"
                         onChange={e => setPieceIdentite(e.target.files ? e.target.files[0] : null)}
-                        required
+                        
                     />
                 </div>
 
