@@ -7,7 +7,7 @@ function Declaration() {
     return (
         <div className='container mb-5 p-lg-5 '>
             <div className="row p-lg-5">
-                <h2 className='fw-bold text-center mb-3'>📝 Choisissez le type de déclaration à effectuer</h2>
+                <h2 className='fw-bold text-center my-5'>📝 Choisissez le type de déclaration à effectuer</h2>
                 <p className='text-center my-3 p-2'>
                     Veuillez sélectionner l’acte que vous souhaitez déclarer.
                     Vous avez la possibilité de faire une déclaration de naissance, de mariage ou de décès.

@@ -7,7 +7,7 @@ function Recuperation() {
     return (
         <div className='container mb-5 p-lg-5 '>
             <div className="row p-lg-5">
-                <h2 className='fw-bold text-center mb-3'>🔎 Récupération d'une déclaration</h2>
+                <h2 className='fw-bold text-center my-5'>🔎 Récupération d'une déclaration</h2>
                 <p className='text-center my-3 p-2'>
                     Merci de sélectionner le type d’acte que vous souhaitez récupérer. Vous pouvez rechercher une déclaration de naissance, de mariage ou de décès.
                     Chaque option vous permettra d’accéder rapidement aux informations déjà enregistrées, grâce à une interface claire et guidée.
