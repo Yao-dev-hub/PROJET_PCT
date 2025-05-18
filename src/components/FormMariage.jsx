@@ -2,8 +2,9 @@ import { Button, Input } from 'antd'
 import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6'
-import PaiementModal from './paiement'
+
 import { GrSend } from 'react-icons/gr'
+import PaiementModal from './PaiementComponent'
 
 function FormMariage() {
     const [etape, setEtape] = useState(1)

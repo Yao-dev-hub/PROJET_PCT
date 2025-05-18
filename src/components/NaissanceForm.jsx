@@ -5,11 +5,11 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GrSend } from "react-icons/gr";
 import toast, { Toaster } from 'react-hot-toast';
-import PaiementModal from './paiement';
+import PaiementModal from './PaiementComponent';
 
 function NaissanceForm() {
     const [etape, setEtape] = useState(1);
-    const [modalVisible, setModalVisible] = useState(false); 
+    const [modalVisible, setModalVisible] = useState(false);
 
     const suivant = () => {
         setEtape(etape + 1);

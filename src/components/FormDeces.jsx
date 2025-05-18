@@ -3,7 +3,7 @@ import { Button, Input } from 'antd';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import { GrSend } from 'react-icons/gr';
 import toast, { Toaster } from 'react-hot-toast';
-import PaiementModal from './paiement';
+import PaiementModal from './PaiementComponent';
 
 function FormDeces() {
   const [etape, setEtape] = useState(1);
@@ -15,11 +15,11 @@ function FormDeces() {
     toast.success('Successfully toasted!')
   }
 
-      //Fonction pour confirmer le paiement
-    const handlePaiementConfirm = () => {
-        setModalVisible(false)
-        ShowMessage()
-    }
+  //Fonction pour confirmer le paiement
+  const handlePaiementConfirm = () => {
+    setModalVisible(false)
+    ShowMessage()
+  }
 
   return (
     <div className='container d-flex justify-content-center align-items-center my-5'>
