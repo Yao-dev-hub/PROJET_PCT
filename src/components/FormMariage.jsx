@@ -1,10 +1,13 @@
-import { Input } from 'antd'
+import { Button, Input } from 'antd'
 import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6'
+import PaiementModal from './paiement'
+import { GrSend } from 'react-icons/gr'
 
 function FormMariage() {
     const [etape, setEtape] = useState(1)
+    const [modalVisible, setModalVisible] = useState(false);
 
     //Passer au suivant
     const suivant = () => {
@@ -18,6 +21,12 @@ function FormMariage() {
 
     const ShowMessage = () => {
         toast.success('Successfully toasted!')
+    }
+
+    //Fonction pour confirmer le paiement
+    const handlePaiementConfirm = () => {
+        setModalVisible(false)
+        ShowMessage()
     }
 
     return (
@@ -203,7 +212,7 @@ function FormMariage() {
                                     <>
                                         <h4 className="my-4">Informations Juridiques du Mariage</h4>
                                         <div className="mb-3 col-lg-6">
-                                            <label for="regime" className="form-label">Régime matrimonial choisi</label>
+                                            <label htmlFor="regime" className="form-label">Régime matrimonial choisi</label>
                                             <select className="form-select shadow-none" id="regime" name="regime">
                                                 <option value="">-- Sélectionner --</option>
                                                 <option value="communauté">Communauté de biens</option>
@@ -211,12 +220,12 @@ function FormMariage() {
                                                 <option value="autre">Autre</option>
                                             </select>
                                         </div>
-                                        <div class="mb-3 col-lg-6">
-                                            <label for="certificate" className="form-label">Certificat prénuptial ou mention de dispense</label>
+                                        <div className="mb-3 col-lg-6">
+                                            <label htmlFor="certificate" className="form-label">Certificat prénuptial ou mention de dispense</label>
                                             <input type="text" className="form-control shadow-none" id="certificate" name="certificate" placeholder="Certificat médical ou 'Dispense'" />
                                         </div>
                                         <div className="mb-3 col-lg-6">
-                                            <label for="contract" className="form-label">Contrat de mariage</label>
+                                            <label htmlFor="contract" className="form-label">Contrat de mariage</label>
                                             <select className="form-select  shadow-none" id="contract" name="contract" >
                                                 <option value="">-- Sélectionner --</option>
                                                 <option value="présent">Présent</option>
@@ -224,12 +233,14 @@ function FormMariage() {
                                             </select>
                                         </div>
                                         <div className="mb-3 col-lg-6">
-                                            <label for="officer" className="form-label">Nom de l’officier d’état civil</label>
+                                            <label htmlFor="officer" className="form-label">Nom de l’officier d’état civil</label>
                                             <input type="text" className="form-control shadow-none" id="officer" name="officer" placeholder="Nom de l’officier" />
                                         </div>
                                         <div className="mb-3 d-flex justify-content-between">
-                                            <button onClick={retour} className='btn btn-dark btn-sm'><FaArrowLeftLong /> retour </button>
-                                            <button className='btn btn-success btn-sm' onClick={ShowMessage} >Soumettre <FaArrowRightLong /></button>
+                                            <Button onClick={retour} className='btn btn-dark btn-sm'><FaArrowLeftLong /> retour </Button>
+                                            <Button type="primary" onClick={() => setModalVisible(true)}>
+                                                Soumettre <GrSend />
+                                            </Button>
                                         </div>
 
                                     </>
@@ -243,6 +254,12 @@ function FormMariage() {
                     </form>
                 </div>
             </div>
+            {/* Modal de paiement */}
+            <PaiementModal
+                visible={modalVisible}
+                onCancel={() => setModalVisible(false)}
+                onConfirm={handlePaiementConfirm}
+            />
         </div>
     )
 }

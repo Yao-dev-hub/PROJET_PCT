@@ -3,15 +3,23 @@ import { Button, Input } from 'antd';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import { GrSend } from 'react-icons/gr';
 import toast, { Toaster } from 'react-hot-toast';
+import PaiementModal from './paiement';
 
 function FormDeces() {
   const [etape, setEtape] = useState(1);
+  const [modalVisible, setModalVisible] = useState(false);
 
   const suivant = () => setEtape(etape + 1);
   const retour = () => setEtape(etape - 1);
   const ShowMessage = () => {
     toast.success('Successfully toasted!')
   }
+
+      //Fonction pour confirmer le paiement
+    const handlePaiementConfirm = () => {
+        setModalVisible(false)
+        ShowMessage()
+    }
 
   return (
     <div className='container d-flex justify-content-center align-items-center my-5'>
@@ -36,7 +44,7 @@ function FormDeces() {
                   <Input type="text" className='text-dark' placeholder="Nom du défunt" />
                 </div>
                 <div className="my-4 col-lg-6">
-                  <Input type="text" className='text-dark'  placeholder="Prénom du défunt" />
+                  <Input type="text" className='text-dark' placeholder="Prénom du défunt" />
                 </div>
                 <div className="mb-4 col-lg-12">
                   <Input type="datetime-local" className='text-dark' placeholder="Date du décès" />
@@ -85,13 +93,20 @@ function FormDeces() {
                 </div>
                 <div className="mb-3 col-lg-12 d-flex justify-content-between">
                   <Button onClick={retour}><FaArrowLeftLong /> Retour</Button>
-                  <Button type="primary" onClick={ShowMessage}>Soumettre <GrSend /></Button>
+                  <Button type="primary" onClick={() => setModalVisible(true)}>
+                    Soumettre <GrSend />
+                  </Button>
                 </div>
               </>
             )}
           </form>
         </div>
       </div>
+      <PaiementModal
+        visible={modalVisible}
+        onCancel={() => setModalVisible(false)}
+        onConfirm={handlePaiementConfirm}
+      />
     </div>
   );
 }
